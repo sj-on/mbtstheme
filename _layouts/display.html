@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="eight columns">
+    {% for post in site.posts limit: 2 %}
+      <h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
+      <div class="row">
+        <div class="twelve columns">
+        {{ post.content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="four columns">
+    <h4>Recent Writings</h4>
+    <p>From the archives of this journal:</p>
+    <ul class="disc">
+      {% for post in site.posts offset: 2 limit: 7 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <h4><a href="/about" target="_blank" rel="noopener noreferrer">About Me</a></h4>
+    <p>I am a website. Are you too?? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur porro nemo ratione excepturi cum reiciendis in, et recusandae voluptatibus.</p>
+    <p><a href="/feed.xml">Subscribe to Feed</a></p>
+  </div>
+</div>
