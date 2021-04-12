@@ -14,7 +14,7 @@ layout: default
   </div>
   <div class="four columns">
     <h4>Recent Writings</h4>
-    <p>From the archives of this journal:</p>
+    <p>From the archives of this blog:</p>
     <ul class="disc">
       {% for post in site.posts offset: 2 limit: 7 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
