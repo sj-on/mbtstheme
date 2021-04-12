@@ -1,5 +1,5 @@
 # mbtstheme
-A Jekyll theme with a focus on BLOGGING. Not suitable for portfolio-like websites (unless of course you're a(n) writer/author). Fork and clone your copy to get started!
+A Jekyll theme with a focus on BLOGGING. Not suitable for portfolio-like websites (unless of course you're a(n) writer/author). Fork and clone to get started!
 
 Layouts available:
 - archive
